@@ -1,2 +1,3 @@
 # DURATION_PROJECT
- This is made to calculate duration.
+
+This is made to calculate duration.
