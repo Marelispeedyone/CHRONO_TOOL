@@ -1,4 +1,64 @@
+
+# FICHIERS COMPILÉS
+
 *.exe
+*.o
+*.obj
+*.out
 *.a
-.vs/
+*.so
+*.dll
+*.dylib
+
+# FICHIERS TEMPORAIRES
+
+*.tmp
+*.log
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+
+# DOSSIERS DE COMPILATION / BUILD
+
+build/
+bin/
+dist/
+out/
+
+
+# DOSSIERS DES ÉDITEURS / IDE
+
 .vscode/
+.idea/
+.vs/
+*.code-workspace
+.project
+.classpath
+.settings/
+
+# FICHIERS DE CONFIGURATION PERSONNELLE
+config_user.ini
+*.env
+*.local
+
+
+# DOCUMENTATION GÉNÉRÉE AUTOMATIQUEMENT
+
+docs/api/
+*.aux
+*.log
+*.toc
+*.out
+
+
+# TESTS (fichiers générés)
+
+tests/unitaires/*.exe
+tests/integration/*.exe
+tests/performance/*.exe
+
+MarkdownSomething/
