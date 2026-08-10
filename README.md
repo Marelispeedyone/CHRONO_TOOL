@@ -18,12 +18,12 @@
 
 This programm adds and substracts durations, automatically normalizing minutes and seconds to stay within 0-59 range when dispalyed.
 
-* What it solves : ****
+* What it solves : **D**
 
 
 
 <style>
-  /* Configuration globale du document - Spéciale pour donner plus de peps à ton fichier README */
+  /* Configuration globale du document - Spéciale pour donner plus de peps à mon fichier README */
   body {
     font-family: "Times New Roman", Times, serif !important;
     font-size: 16px !important; /* Taille de base pour le texte */

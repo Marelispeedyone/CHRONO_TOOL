@@ -1,7 +1,9 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -I include
-TARGET = programme.exe
+TARGET = programm.exe
 SOURCES = main.cpp src/core/Duration.cpp
+
+all: $(TARGET)
 
 $(TARGET): $(SOURCES)
 	$(CXX) $(CXXFLAGS) -o $@ $^
@@ -11,5 +13,7 @@ clean:
 
 run: $(TARGET)
 	./$(TARGET)
+
+rebuild: clean all run
 
 .PHONY: all clean run
