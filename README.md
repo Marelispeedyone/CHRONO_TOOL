@@ -1,6 +1,26 @@
-# DURATION_PROJECT
+# CHRONO_TOOL
 
 **A program to calculate durations without a hitch !**  
+
+
+## Table of contents
+1. [About](#about)
+2. [Features](#-features)
+3. [Prerequisites](#-prerequisites)
+4. [Quick Start](#-quick-start)
+5. [Preview](#-preview)
+6. [Usage](#-usage)
+7. [What i learned](#-what-i-learned)
+8. [Future improvements](#-future-improvements)
+9. [License & author](#-license-&-author)
+
+## About
+
+This programm adds and substracts durations, automatically normalizing minutes and seconds to stay within 0-59 range when dispalyed.
+
+* What it solves : ****
+
+
 
 <style>
   /* Configuration globale du document - Spéciale pour donner plus de peps à ton fichier README */

@@ -4,7 +4,7 @@
 
 class Duration {
     
-    protected :
+    private :
         
         int m_hours ;
         int m_minutes ;
@@ -17,7 +17,8 @@ class Duration {
         Duration(int hours, int minutes);
         Duration(int hours, int minutes, int seconds);
 
-        void display () const ; 
+        void display () const ;
+        void normalize() ;
 
 };
 

@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string>
-#include"Duration.h"
+#include"../../Include/core/Duration.h"
 
 using namespace std ;
 
