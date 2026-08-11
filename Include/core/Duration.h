@@ -1,6 +1,7 @@
 #ifndef DURATION_H
 #define DURATION_H
 
+#include<string>
 
 class Duration {
     
@@ -18,7 +19,8 @@ class Duration {
         Duration(int hours, int minutes, int seconds);
 
         void normalize() ;
-        void display_HMS_format () const ;
+
+        std::string toHMS () const ;
         int toSeconds() const;
 
         int getHours() const ;

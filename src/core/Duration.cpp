@@ -24,11 +24,13 @@ Duration::Duration(int hours, int minutes, int seconds): m_hours(hours), m_minut
 
 void Duration::normalize(){
 
+    // seconds should not be over 59
+
     if(m_seconds >= 60){
         m_minutes += m_seconds/60 ;
         m_seconds %= 60 ;
     }
-
+    // minutes should not be over 59
     if(m_minutes >= 60 ){
         m_hours += m_minutes/60 ;
         m_minutes %= 60 ;
@@ -36,9 +38,9 @@ void Duration::normalize(){
 
 }
 
-void Duration::display_HMS_format() const{
-
-    cout << m_hours <<"h "<< m_minutes <<"min " << m_seconds << "s "<< endl;
+string Duration::toHMS () const{
+    
+    return to_string(m_hours)+"h "+to_string(m_minutes)+"min "+to_string(m_seconds)+"s " ;
 
 }
 
