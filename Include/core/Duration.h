@@ -20,6 +20,10 @@ class Duration {
         void normalize() ;
         void display_HMS_format () const ;
         int toSeconds(Duration duration);
+
+        int getHours() const ;
+        int getMinutes() const ;
+        int getSeconds() const ;
 };
 
 

@@ -1,6 +1,8 @@
+#include"../../Include/core/Duration.h"
+
 #include<iostream>
 #include<string>
-#include"../../Include/core/Duration.h"
+
 
 using namespace std ;
 
@@ -43,5 +45,22 @@ void Duration::display_HMS_format() const{
 int Duration::toSeconds( Duration duration) {
 
     return ( m_hours*3600 + m_minutes*60 + m_seconds );
+
+}
+
+int Duration::getHours() const {
+
+    return m_hours ;
+
+}
+
+int Duration::getMinutes() const {
+
+    return m_minutes ;
+
+}
+
+int Duration::getSeconds() const {
     
+    return m_seconds ;
 }
