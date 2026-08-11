@@ -44,6 +44,12 @@ string Duration::toHMS () const{
 
 }
 
+void Duration::writeToHMS (ostream &flux) const{
+
+    flux << toHMS();
+
+}
+
 int Duration::toSeconds() const {
 
     return ( m_hours*3600 + m_minutes*60 + m_seconds );
@@ -189,5 +195,13 @@ Duration operator-(Duration const& duration, int seconds){
     Duration result(0,0,totalSeconds) ;
 
     return result;
+
+}
+
+ostream& operator<<(ostream &flux, Duration const& duration){
+
+    duration.writeToHMS(flux);
+
+    return flux;
 
 }

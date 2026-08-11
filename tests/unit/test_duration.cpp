@@ -37,10 +37,13 @@ void normalizeTest(){
     
 }
 
+
 int main(){
 
+    Duration d1(1,133,50) ;
     displayTest();
     normalizeTest();
+    cout << d1 << endl;
 
     return 0 ;
 }

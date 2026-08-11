@@ -20,10 +20,12 @@
 
 ### Time manipulation
 
-- [ ] **Arithmetic Operations ( +, -, ==, >, <, <=, >=)**
-- [ ] **Seconds and minutes overflow ( >= 60 ), auto-normalization**
-- [ ] **Auto-Conversion to HMS format**
-- [ ] **Conversion to seconds**
+- [x] **Arithmetic Operations ( +, -, ==, >, <, <=, >=)**
+- [x] **Seconds and minutes overflow ( >= 60 ), auto-normalization**
+- [x] **Auto-Conversion to HMS format**
+- [x] **Conversion to seconds**
+- [x] **Display in HMS format**
+
 
 ### Stopwatch
 

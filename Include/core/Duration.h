@@ -1,6 +1,7 @@
 #ifndef DURATION_H
 #define DURATION_H
 
+#include<iostream>
 #include<string>
 
 class Duration {
@@ -22,6 +23,7 @@ class Duration {
         void normalize() ;
 
         std::string toHMS () const ;
+        void writeToHMS (std::ostream &flux) const ;
         int toSeconds() const;
 
         int getHours() const ;
@@ -57,4 +59,6 @@ inline Duration operator+(Duration const& duration, int seconds);
 inline Duration operator-(Duration const& duration1, Duration const& duration2);
 
 inline Duration operator-(Duration const& duration, int secondes);
+
+std::ostream& operator<<(std::ostream &flux, Duration const& duration);
 #endif // DURATION_H
