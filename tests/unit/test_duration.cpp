@@ -8,7 +8,7 @@ void displayTest(){
 
     Duration d1(4) ;
     d1.display_HMS_format();
-    Duration d2(3, 10, 46 ) ;
+    Duration d2(3, 10, 46 );
     d2.display_HMS_format();
 
 }
@@ -29,4 +29,12 @@ void normalizeTest(){
     // Check we have the excepted result '2h72min60 -> 3h12min0'
 
     d1.display_HMS_format();
+}
+
+int main(){
+    
+    displayTest();
+    normalizeTest();
+
+    return 0 ;
 }
