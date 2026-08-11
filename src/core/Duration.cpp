@@ -67,7 +67,46 @@ int Duration::getSeconds() const {
     return m_seconds ;
 }
 
+Duration& Duration::operator+=(Duration const& duration){
 
+    m_hours+= duration.getHours();
+    m_minutes+= duration.getMinutes();
+    m_seconds+= duration.getSeconds();
+
+    normalize();
+
+    return *this ;
+
+}
+
+Duration& Duration::operator+=(int seconds){
+    m_seconds+= seconds ;
+
+    normalize();
+
+    return *this ;
+
+}
+
+Duration& Duration::operator-=(Duration const& duration){
+
+    m_hours-= duration.getHours();
+    m_minutes-= duration.getMinutes();
+    m_seconds-= duration.getSeconds();
+
+    normalize() ;
+
+    return *this ;
+}
+
+Duration& Duration::operator-=( int seconds){
+
+    m_seconds-= seconds;
+
+    normalize() ;
+
+    return *this ;
+}
 
 bool operator==(Duration const& duration1, Duration const& duration2){
 
@@ -105,3 +144,50 @@ bool operator<=(Duration const& duration1, Duration const& duration2){
 
 }
 
+Duration operator+(Duration const& duration1, Duration const& duration2){
+
+    int totalSeconds ;
+
+    totalSeconds = duration1.toSeconds() + duration2.toSeconds() ;
+
+    Duration result(0,0,totalSeconds) ;
+
+    return result;
+
+}
+
+Duration operator+(Duration const& duration, int seconds){
+
+    int totalSeconds ;
+
+    totalSeconds = duration.toSeconds() +  seconds ;
+
+    Duration result(0,0,totalSeconds) ;
+
+    return result;
+
+}
+
+Duration operator-(Duration const& duration1, Duration const& duration2){
+
+    int totalSeconds ;
+
+    totalSeconds = duration1.toSeconds() - duration2.toSeconds() ;
+
+    Duration result(0,0,totalSeconds) ;
+    
+    return result;
+
+}
+
+Duration operator-(Duration const& duration, int seconds){
+
+    int totalSeconds ;
+
+    totalSeconds = duration.toSeconds() -  seconds ;
+
+    Duration result(0,0,totalSeconds) ;
+
+    return result;
+
+}

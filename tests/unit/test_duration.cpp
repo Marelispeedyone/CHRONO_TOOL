@@ -8,9 +8,9 @@ using namespace std ;
 void displayTest(){
 
     Duration d1(4) ;
-    d1.display_HMS_format();
+    cout << d1.toHMS() << endl ;
     Duration d2(3, 10, 46 );
-    d2.display_HMS_format();
+    cout << d2.toHMS() << endl ;
 
 }
 
@@ -30,7 +30,7 @@ void normalizeTest(){
     
     // Check we have the excepted result '2h72min60 -> 3h13min0'
 
-    d1.display_HMS_format();
+    cout << d1.toHMS() << endl ;
 
     
 
