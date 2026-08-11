@@ -17,9 +17,9 @@ class Duration {
         Duration(int hours, int minutes);
         Duration(int hours, int minutes, int seconds);
 
-        void display () const ;
         void normalize() ;
-
+        void display_HMS_format () const ;
+        int toSeconds(Duration duration);
 };
 
 
