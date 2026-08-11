@@ -16,9 +16,21 @@
 
 ## About
 
-This programm adds and substracts durations, automatically normalizing minutes and seconds to stay within 0-59 range when dispalyed.
+## Features
 
-* What it solves : **D**
+### Time manipulation
+
+- [ ] **Arithmetic Operations ( +, -, ==, >, <, <=, >=)**
+- [ ] **Seconds and minutes overflow ( >= 60 ), auto-normalization**
+- [ ] **Auto-Conversion to HMS format**
+- [ ] **Conversion to seconds**
+
+### Stopwatch
+
+
+- [ ] **start/pause/resume**
+- [ ] **add/undo laps**
+- [ ] **display all laps and total durations**
 
 
 
