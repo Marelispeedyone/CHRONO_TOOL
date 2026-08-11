@@ -19,12 +19,25 @@ class Duration {
 
         void normalize() ;
         void display_HMS_format () const ;
-        int toSeconds(Duration duration);
+        int toSeconds() const;
 
         int getHours() const ;
         int getMinutes() const ;
         int getSeconds() const ;
 };
 
+// inline only into .h file in order to have the same function definition everywhere and compile without a hitch.
+
+inline bool operator==(Duration const& duration1, Duration const& duration2) ;
+
+inline bool operator!=(Duration const& duration1, Duration const& duration2 );
+
+inline bool operator>(Duration const& duration1, Duration const& duration2 );
+
+inline bool operator<(Duration const& duration1, Duration const& duration2 );
+
+inline bool operator>=(Duration const& duration1, Duration const& duration2 );
+
+inline bool operator<=(Duration const& duration1, Duration const& duration2 );
 
 #endif // DURATION_H

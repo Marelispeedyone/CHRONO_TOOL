@@ -42,7 +42,7 @@ void Duration::display_HMS_format() const{
 
 }
 
-int Duration::toSeconds( Duration duration) {
+int Duration::toSeconds() const {
 
     return ( m_hours*3600 + m_minutes*60 + m_seconds );
 
@@ -61,6 +61,45 @@ int Duration::getMinutes() const {
 }
 
 int Duration::getSeconds() const {
-    
+
     return m_seconds ;
 }
+
+
+
+bool operator==(Duration const& duration1, Duration const& duration2){
+
+    return duration1.toSeconds() == duration2.toSeconds() ;
+
+}
+
+bool operator!=(Duration const& duration1, Duration const& duration2){
+
+    return duration1.toSeconds() != duration2.toSeconds() ;
+
+}
+
+bool operator>(Duration const& duration1, Duration const& duration2){
+
+    return duration1.toSeconds() > duration2.toSeconds() ;
+
+}
+
+bool operator<(Duration const& duration1, Duration const& duration2){
+
+    return duration1.toSeconds() < duration2.toSeconds() ;
+
+}
+
+bool operator>=(Duration const& duration1, Duration const& duration2){
+
+    return duration1.toSeconds() >= duration2.toSeconds() ;
+
+}
+
+bool operator<=(Duration const& duration1, Duration const& duration2){
+
+    return duration1.toSeconds() <= duration2.toSeconds() ;
+
+}
+
